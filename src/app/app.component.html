@@ -1,10 +1,16 @@
 <div class="main">
-    <div class="message">aoknoworks is comming soon... (<a href="https://twitter.com/aok_no_simpi">@aok_no_simpi</a>)</div>
+    <div class="bg"></div>
+    <div class="image particle"></div>
+    <div class="image sofa"></div>
+    <div class="image cushion"></div>
+    <div class="image character"></div>
+    <!-- <div class="message">aoknoworks is comming soon... (<a href="https://twitter.com/aok_no_simpi">@aok_no_simpi</a>)</div> -->
     <div class="navigation">
         <div class="link"><a href="">About</a></div>
         <div class="link"><a href="">Works</a></div>
         <div class="link"><a href="">Contact</a></div>
     </div>
+    <div lottie [options]="options" (animationCreated)="animationCreated($event)" id="logo"></div>
 </div>
 
 <router-outlet></router-outlet>
